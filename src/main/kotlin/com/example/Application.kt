@@ -9,7 +9,7 @@ fun main() {
 
     Stripe.apiKey = "sk_test_51Kjbz4AuBgxbOOjROIn4zNleCC0igpCGxHlNKT1CMNLEwRr9eWutouJo9tmoercTGAYQT996szY90UyowpuQKF8500KiUpRbFv"
 
-    embeddedServer(Netty, port = 8080, host = "0.0.0.0") {
+    embeddedServer(Netty, port = System.getenv("PORT").toInt(), host = "0.0.0.0") {
         configureRouting()
     }.start(wait = true)
 }
