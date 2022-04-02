@@ -35,7 +35,7 @@ fun Route.payment() {
 
     route("/stripe") {
         get {
-            call.respondText("Hello Stripe!")
+            call.respondText("Hello mito!!!!!!")
         }
         get("{id}") {
 
