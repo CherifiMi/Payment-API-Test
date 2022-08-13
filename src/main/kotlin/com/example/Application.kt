@@ -7,7 +7,7 @@ import com.stripe.Stripe
 
 fun main() {
 
-    Stripe.apiKey = "sk_test_51Kjbz4AuBgxbOOjROIn4zNleCC0igpCGxHlNKT1CMNLEwRr9eWutouJo9tmoercTGAYQT996szY90UyowpuQKF8500KiUpRbFv"
+    Stripe.apiKey = "pk_test_51KkDEgCpXNrjS0vATGw0tV5pind5LMe49nAqDe41T3brgZc7J9bv7MQAopciLojJZFuKY4wUWUCAf2GVLoBXdLyw00LjLJRdni"
 
     embeddedServer(Netty, port = System.getenv("PORT").toInt(), host = "0.0.0.0") {
         configureRouting()
